@@ -5,6 +5,10 @@ import os
 app = Flask(__name__)
 
 @app.route("/api/", methods=["POST"])
+@app.route("/", methods=["GET"])
+def index():
+    return jsonify({"message": "TDS Virtual TA is running. Use the /api/ endpoint to POST questions."})
+
 def handle():
     data = request.get_json()
     q = data.get("question", "")
