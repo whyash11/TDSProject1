@@ -1,0 +1,9 @@
+Flask
+openai
+python-dotenv
+requests
+Pillow
+pytesseract
+beautifulsoup4
+lxml
+aipipe
